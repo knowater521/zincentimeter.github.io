@@ -1,0 +1,68 @@
+
+.links {text-decoration: none;}
+.links:link {color: #000000;}
+.links:visited {color: #969696;}
+
+.post-time {text-align: right;}
+body {
+    background-color: #f1f1f1;
+}
+#header {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: #646464;
+}
+#navigator {
+    line-height: 30px;
+    height: 1080px;
+    width: 20%;
+    padding: 5px;
+    /* margin: 5px; */
+    background-color: rgb(219, 219, 219);
+    float: left;
+    /* border: 1px solid black; */
+}
+#recommendation {
+    width: 75%;
+    padding: 15px;
+    float: left;
+    background-color: #eaffd0;
+    /* border-color: #646464;
+    border-style: solid; 
+    border-width: 1px; */
+    
+}
+#article {
+    width: 75%;
+    padding: 15px;
+    float: left;
+    background-color: #c0c0c0;
+    /* border-color: #646464;
+    border-style: solid; 
+    border-width: 1px; */
+}
+#article-brief {
+    padding: 15px;
+    float: left;
+    background-color: #c0c0c0;
+    /* border-color: #646464;
+    border-style: solid; 
+    border-width: 1px; */
+    width: 75%;
+}
+#profile {
+    width: 75%;
+    padding: 15px;
+    background-color: #eaffd0;
+    text-align: left;
+}
+#profile span {
+    background-color:#c6ff80;
+    /* padding: 15px; */
+}
+#footnote {
+    padding: 15px;
+    text-align: left;
+    clear: both;
+}

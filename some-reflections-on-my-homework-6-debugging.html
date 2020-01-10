@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<title>Home - ぶLOG</title>
+
+<body>
+    <div id="header">
+        <h1 >ぶLOG</h1>
+        <h2>-- This is ZinCentimeter's blog, version 0.5. --</h2>
+    </div>
+    
+    <div id="navigator">
+        <a class="links" href="index.html">Home</a>
+        <br />
+        <a class="links" href="profile.html">About</a>
+        <br />
+        <a class="links" href="test.html">Laboratory</a>
+        <!-- <a href="">Articles</a> -->
+    </div>
+
+    <div id="article">
+        <h2>
+            <a class="titles" name="homework">
+                Some reflections on my HOMEWORK 6 debugging
+            </a>
+        </h2>
+        <p class="post-time">2019-1-6 03:08</p>
+        <p>
+                   从前几天到现在，一直在写Homework 6的代码。
+            <br /> 就在今天2点38分，第27次提交All accepted。
+            <br />
+            <br /> 但是就算AC了还是感觉高兴不起来。
+            <br /> 虽然说，至少能放下这件事写点心得了。
+            <br />
+            <br /> 这几天写代码的时候虽然总是长时间地盯着电脑屏幕，但是自认为思考的时间却少了很多。
+            <br />
+            <br /> 题目很简单，写一个语法分析器和一个模拟器（大概是这么叫）：给定一串程序，输出程序的运行结果。
+            <br />
+            <br /> 但是Debug的过程总是错误百出。
+            <br /> 而且总觉得培养了一个很糟糕的习惯——拐弯抹角地找测试数据的奇葩点。
+            <br /> 这个习惯也导致了我根本没有好好看自己的程序，一直在打补丁，就是不看前面写了什么。
+            <br />
+            <br /> 然而，最后的几次修正里，都是程序基本功能的问题。而且都是很基础很基础的功能问题。
+            <br />
+            <br /> 首当其冲的就是，在前15次提交里，我都没有写While的功能。
+            <br />
+            <br /> 意思就是说：每次读到循环体的时候我压根就没有执行里面的东西。
+            <br /> 甚至没有判断While的值会不会变。
+            <br /> 这也意味着——
+            <br /> 如果While的初始条件是True的化，那这个程序就会直接输出死循环的结果
+            <br /> 因为根本不执行内部代码，也不会迭代到下一行语句。
+            <br />
+            <br /> 令人惊讶的是，即便如此我还是过了85%的测试点。
+            <br />
+            <br /> 然而，我又发现判断If语句的功能也没有写。
+            <br /> 不光这样，我还发现我连当条件为False时向循环体/判断语句的结束迭代的操作都没有做。
+            <br /> 每次当我的循环体/判断语句初始条件是False的时候，
+            <br /> 我的程序就按着顺序往下，做循环体/判断语句里面的东西，
+            <br /> 然后这条件判断也就形同虚设了。
+            <br />
+            <br /> 发现上述错误之前，我过了96%的测试点，只有一个错。
+            <br />
+            <br /> 如果我今天没有静下心来自己挑错的话，
+            <br /> 说不定我还会大言不惭地再说
+            <br /> “这个Test case怎么这么妖”、
+            <br /> “怎么会有比 !!x还妖的东西”。
+            <br />
+            <br /> 然而事实就是：
+            <br /> 我急匆匆地写完代码、急匆匆地提交、急匆匆地修改程序，又急匆匆地水掉一天。
+            <br />
+            <br /> 这样真的不好。
+            <br /> AC哪有什么可高兴的，全是问题。
+            <br /> -----
+            <br /> 附：<a class="links" href="Homework56.pdf">HOMEWORK 5 6 本体</a>
+        </p>
+    </div>
+
+    <div id="footnote">
+        <p>
+            Please do not copy.
+            <br /> 2019©ZinCentimeter
+        </p>
+    </div>
+</body>
+
+</html>
